@@ -10,6 +10,9 @@ app.use(logger('dev'))
 const usersRouter = require("./routes/users/usersRouter");
 app.use("/api/v1/users", usersRouter)
 
+const eventsRouter = require("./routes/events/eventsRouter");
+app.use("/api/v1/events", eventsRouter)
+
 const PORT = 3000
 
 app.listen(PORT, () => {
